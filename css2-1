@@ -1,0 +1,14 @@
+﻿@font-face {
+  font-family: 'Brygada 1918';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/brygada1918/v25/pe08MI6eKpdGqlF5LANrM--ACNaeo8mTUIR_y2-f-V8-1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Brygada 1918';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(s/brygada1918/v25/pe08MI6eKpdGqlF5LANrM--ACNaeo8mTUIR_y4iY-V8-1.ttf) format('truetype');
+}
