@@ -1,0 +1,99 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.newmargin {
+    margin-top: 50px;
+}
+
+/* Стили для секции безопасности */
+.security-update {
+    background-color: #5e503f;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.security-update .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.startup-article{
+    background-color: white;
+    padding: 50px 10px;
+}
+.security-update .description {
+    font-size: 18px;
+    margin-bottom: 40px;
+    animation: slideUp 1.5s ease-in-out;
+}
+
+.security-update .read-more {
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.security-update .read-more:hover {
+    background-color: #45a049;
+}
+
+/* Стили для подробностей */
+.details {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.details h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.details p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

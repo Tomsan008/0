@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/mbr-additional-1.css">
+    <title>JavaScript</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #2b5876, #4e4376);
+            color: white;
+            overflow: hidden;
+             background-image: url("assets/images/g6e637ab631242c9bdd6689061833-h_m4grh86y-1.jpg");/*апвапвап*/
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 50px;
+            color: #ffcc00;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+            }
+            100% {
+                text-shadow: 0 0 20px #ffe066, 0 0 30px #ffe066, 0 0 40px #ffe066;
+            }
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 10px 20px;
+            margin-bottom: 200px;
+        }
+
+        .mouse-effect {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            animation: fadeOut 1s forwards;
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(3);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<h1>JavaScript</h1>
+<div class="content">
+    <p>JavaScript — это популярный язык программирования, который используется для создания интерактивных и динамических веб-страниц. Это ключевой элемент веб-разработки наряду с HTML и CSS.</p>
+
+</div>
+<div class="mbr-section-btn">
+    <div contenteditable="true" style="position: absolute; left: -100000px; opacity: 0;"></div>
+    <div contenteditable="true" style="position: absolute; left: -100000px; opacity: 0;"></div>
+    <div contenteditable="true" style="position: absolute; left: -100000px; opacity: 0;"></div>
+    <div contenteditable="true" style="position: absolute; left: -100000px; opacity: 0;"></div>
+    <div contenteditable="true" style="position: absolute; left: -100000px; opacity: 0;"></div>
+    <div contenteditable="true" style="position: absolute; left: -100000px; opacity: 0;"></div>
+    <a class="btn btn-white-outline display-7 new_btn" href="index.htm">На главную</a></div>
+<script>
+    document.addEventListener('mousemove', (e) => {
+        const effect = document.createElement('div');
+        effect.classList.add('mouse-effect');
+        effect.style.left = `${e.pageX}px`;
+        effect.style.top = `${e.pageY}px`;
+        document.body.appendChild(effect);
+
+        setTimeout(() => {
+            effect.remove();
+        }, 1000);
+    });
+</script>
+</body>
+</html>
